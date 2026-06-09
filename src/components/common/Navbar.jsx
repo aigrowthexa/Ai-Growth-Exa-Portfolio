@@ -14,9 +14,13 @@ export default function Navbar() {
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#111827]/90 backdrop-blur-xl">
-      <div className="container flex h-20 items-center justify-between">
-        <a href="#home" className="text-xl font-black tracking-wide">
-          AI Growth <span className="text-cyan-400">Exa</span>
+      <div className="container flex h-24 items-center justify-between md:h-28">
+        <a href="#home" className="flex shrink-0 items-center">
+          <img
+            src="/logo.png"
+            alt="Logo"
+            className="w-40 max-w-none object-contain sm:w-44 md:w-52 lg:w-56"
+          />
         </a>
         <nav className="hidden items-center gap-8 text-sm text-zinc-300 lg:flex">
           {navItems.map(([href, label]) => (
